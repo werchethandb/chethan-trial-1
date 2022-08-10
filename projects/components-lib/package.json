@@ -1,0 +1,15 @@
+{
+  "name": "@werchethandb/components-lib",
+  "version": "0.0.1",
+  "peerDependencies": {
+    "@angular/common": "^12.2.0",
+    "@angular/core": "^12.2.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:werchethandb/chethan-trial-1.git"
+  },
+  "dependencies": {
+    "tslib": "^2.3.0"
+  }
+}
