@@ -18,11 +18,11 @@ jobs:
           registry-url: 'https://npm.pkg.github.com/'
           scope: '@werchethandb'
           
-      - name: Experiment
-        run: |
-            npm build
-            ls -alrt
-            find /home/runner/work/chethan-trial-1/chethan-trial-1/ -name "*.tgz"        
+      - run: pwd
+      - run: npm build
+      - run: ls -alrt
+      - run: find /home/runner/work/chethan-trial-1/chethan-trial-1/ -name "*.tgz"        
+      - run: pwd
 
 #  - name: build
 #         run: |
