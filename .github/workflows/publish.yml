@@ -21,18 +21,7 @@ jobs:
       - name: Experiment
       - run: npm build
       - run: ls -alrt
-      - run: find /home/runner/work/chethan-trial-1/chethan-trial-1/ -name "*.tgz"
-             
-        
-      #  - name: build
-#         run: |
-#           pwd             # /home/runner/work/chethan-trial-1/chethan-trial-1
-#           npm build
-#           ls -alrt
-#           cd ./dist/components-lib
-#           pwd             # /home/runner/work/chethan-trial-1/chethan-trial-1/dist/components-lib
-#           ls -alrt
-#           npm pack
+      - run: find /home/runner/work/chethan-trial-1/chethan-trial-1/ -name "*.tgz"        
 
   publish-gpr:
     runs-on: ubuntu-latest
