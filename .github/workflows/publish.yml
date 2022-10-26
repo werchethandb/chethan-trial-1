@@ -1,4 +1,4 @@
-name: Publish package to GitHub Packages
+name: Quality check and Publish package to GitHub Packages
 
 on:
   push:
@@ -22,10 +22,10 @@ jobs:
         run: |
           pwd             # /home/runner/work/chethan-trial-1/chethan-trial-1
           npm build
-          ls -lrt
-          cd projects/components-lib
-          pwd             # /home/runner/work/chethan-trial-1/chethan-trial-1/projects/components-lib
-          ls -lrt
+          ls -alrt
+          cd /dist/components-lib
+          pwd             # /home/runner/work/chethan-trial-1/chethan-trial-1/dist/components-lib
+          ls -alrt
           npm pack
       # - run: npm ci
 
@@ -47,10 +47,10 @@ jobs:
       - run: |
           pwd             # /home/runner/work/chethan-trial-1/chethan-trial-1
           npm build
-          ls -lrt
-          cd projects/components-lib
-          pwd             # /home/runner/work/chethan-trial-1/chethan-trial-1/projects/components-lib
-          ls -lrt
+          ls -alrt
+          cd /dist/components-lib
+          pwd             # /home/runner/work/chethan-trial-1/chethan-trial-1/dist/components-lib
+          ls -alrt
           npm pack
           npm publish
 
