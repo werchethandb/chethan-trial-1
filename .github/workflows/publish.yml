@@ -24,6 +24,8 @@ jobs:
       - run: ls -alrt
       - run: find . -name *.tgz 
       - run: pwd
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
 #  - name: build
 #         run: |
