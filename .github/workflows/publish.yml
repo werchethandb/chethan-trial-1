@@ -19,7 +19,8 @@ jobs:
           scope: '@werchethandb'
           
       - run: pwd
-      - run: npm build
+      - run: npm install
+      - run: npm run build && npm run pack
       - run: ls -alrt
       - run: find . -name *.tgz 
       - run: pwd
