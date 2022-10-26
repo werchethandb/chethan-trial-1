@@ -10,7 +10,7 @@ on:
 jobs:
   quality:
     runs-on: ubuntu-latest
-    permissions: read-all|write-all
+    permissions: write-all
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v3
