@@ -23,7 +23,7 @@ jobs:
           pwd             # /home/runner/work/chethan-trial-1/chethan-trial-1
           npm build
           ls -alrt
-          cd /dist/components-lib
+          cd ./dist/components-lib
           pwd             # /home/runner/work/chethan-trial-1/chethan-trial-1/dist/components-lib
           ls -alrt
           npm pack
@@ -48,7 +48,7 @@ jobs:
           pwd             # /home/runner/work/chethan-trial-1/chethan-trial-1
           npm build
           ls -alrt
-          cd /dist/components-lib
+          cd ./dist/components-lib
           pwd             # /home/runner/work/chethan-trial-1/chethan-trial-1/dist/components-lib
           ls -alrt
           npm pack
