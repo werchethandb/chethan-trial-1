@@ -19,6 +19,10 @@ jobs:
           scope: '@werchethandb'
           
       - name: Experiment
+        run: npm build
+             ls -alrt
+        
+      - name: build
         run: |
           pwd             # /home/runner/work/chethan-trial-1/chethan-trial-1
           npm build
