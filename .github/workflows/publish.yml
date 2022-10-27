@@ -16,9 +16,7 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: '14.x'
-          registry-url: 'https://npm.pkg.github.com/'
-          scope: '@werchethandb'
-          
+         
       - run: pwd
       - run: npm ci
       - run: npm run build
